@@ -106,6 +106,7 @@ for i = 1:1:6
         Perfusion_trimmed(i,1) = c;
 end
 
-%% %%%%%%--------STEP FOUR---Calculate b/a feature--------%%%%%%%%%
+%% %%%%%%--------STEP FOUR---Calculate b/a, d/a feature--------%%%%%%%%%
 %%%%%%%%%%%-------Amplitude of num_b divide num_a-------%%%%%%%%%%%%%
-b_a_feature = APG( 1, Loc_APG(2,beat) ) / APG( 1, Loc_APG(1,beat) );     
+b_a_feature = APG( 1, Loc_APG(2,beat) ) / APG( 1, Loc_APG(1,beat) );  
+d_a_feature = APG( 1, Loc_APG(4,beat) ) / APG( 1, Loc_APG(1,beat) );     
